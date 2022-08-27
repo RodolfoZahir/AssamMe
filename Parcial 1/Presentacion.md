@@ -10,8 +10,8 @@ Actualmente no trabajo, en vacaciones pasadas me he dedicado a reparar/dar mante
 * Consolas
 * Periféricos
 
-También he trabajado en McDonald's
- ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/220px-McDonald%27s_logo.svg.png) 
+También he trabajado en McDonald's  
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/220px-McDonald%27s_logo.svg.png) 
 Sabía lo que se debía hacer en todas las áreas y también tuve algo de experiencia manejando el sistema de McDonald's no de modificarlo internamente ni nada por el estilo, solamente utilizarlo para realizar pedidos y marcarlos en el sistema, el área donde yo estaba encargado era de cocina.
 
 ## Lenguajes de programación que domino :thumbsup:
