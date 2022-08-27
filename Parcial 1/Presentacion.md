@@ -1,7 +1,7 @@
 ## Historial Académico :grinning:
->*Primaria:* **Rafael Ramírez**
->*Secundaria:* **Juan Ruiz de Alarcón**
->*Preparatoria:* **COBAT 01**
+>*Primaria:* **Rafael Ramírez**  
+>*Secundaria:* **Juan Ruiz de Alarcón**  
+>*Preparatoria:* **COBAT 01**  
 >*Universidad:* **TECNM Campus Nuevo Laredo (En Proceso)**
 
 ## Experiencia Laboral :star:
