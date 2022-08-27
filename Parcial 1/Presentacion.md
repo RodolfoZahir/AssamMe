@@ -28,5 +28,5 @@ poder diseñar aplicaciones móviles.
 ## ¿En qué piensa especializarse en un futuro (BD, Móviles, redes etc)? :iphone:
 Mi especialidad que escogí en la universidad es _Desarrollo de Software_, sinceramente me gustaría ejercer esta especialidad en mi futuro trabajo, me gusta mucho sentir esa satisfacción al diseñar un programa y que funcione en su totalidad.
 
-##¿Hobbies o deportes que practica? :basketball:
+## ¿Hobbies o deportes que practica? :basketball:
 Mis hobbies son armar cubos Rubik, ver películas, salir con amigos, jugar videojuegos, son cosas que hago casi diariamente, actualmente no practico ningún deporte.
