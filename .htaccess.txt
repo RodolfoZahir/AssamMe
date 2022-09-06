@@ -12,55 +12,55 @@ Options +Indexes
   # Some meta tags to add to the head tag
   IndexHeadInsert "<meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'>"
 
-  HeaderName "{LISTING_DIRECTORY}/header.html"
-  ReadmeName "{LISTING_DIRECTORY}/footer.html"
-  IndexStyleSheet "{LISTING_DIRECTORY}/{LISTING_STYLE}.css"
+  HeaderName "{C:\wamp64\www\AssamMe\directory-listing}/header.html"
+  ReadmeName "{C:\wamp64\www\AssamMe\directory-listing}/footer.html"
+  IndexStyleSheet "{C:\wamp64\www\AssamMe\directory-listing}/{LISTING_STYLE}.css"
 
 
   # Registering icons
   # Default icon
-  DefaultIcon "{LISTING_DIRECTORY}/icons/unknown.svg"
+  DefaultIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/unknown.svg"
 
   # Some generic icons
-  AddIcon "{LISTING_DIRECTORY}/icons/blank.svg" ^^BLANKICON^^
-  AddIcon "{LISTING_DIRECTORY}/icons/folder.svg" ^^DIRECTORY^^
-  AddIcon "{LISTING_DIRECTORY}/icons/folder-home.svg" ..
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/blank.svg" ^^BLANKICON^^
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/folder.svg" ^^DIRECTORY^^
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/folder-home.svg" ..
 
   # Extension specific icons
-  AddIcon "{LISTING_DIRECTORY}/icons/archive.svg" .zip .7z .bz2 .cab .gz .tar .rar
-  AddIcon "{LISTING_DIRECTORY}/icons/audio.svg" .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
-  AddIcon "{LISTING_DIRECTORY}/icons/bin.svg" .bin .hex
-  AddIcon "{LISTING_DIRECTORY}/icons/code.svg" .xml
-  AddIcon "{LISTING_DIRECTORY}/icons/doc.svg" .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
-  AddIcon "{LISTING_DIRECTORY}/icons/img.svg" .bmp .png .tiff .tif .gif .jpg .jpeg .jpe .psd .ai .ico .webp
-  AddIcon "{LISTING_DIRECTORY}/icons/spreadsheet.svg" .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
-  AddIcon "{LISTING_DIRECTORY}/icons/presentation.svg" .ppt .pptx .pot .potx .pptm .potm .xps
-  AddIcon "{LISTING_DIRECTORY}/icons/c++.svg" .cpp
-  AddIcon "{LISTING_DIRECTORY}/icons/c.svg" .c
-  AddIcon "{LISTING_DIRECTORY}/icons/css3.svg" .css .sass .scss .less
-  AddIcon "{LISTING_DIRECTORY}/icons/font.svg" .ttf .TTF .woff .WOFF .woff2 .WOFF2 .otf .OTF
-  AddIcon "{LISTING_DIRECTORY}/icons/h.svg" .h
-  AddIcon "{LISTING_DIRECTORY}/icons/html5.svg" .html .xhtml .shtml .htm .URL .url
-  AddIcon "{LISTING_DIRECTORY}/icons/info.svg" .nfo .info
-  AddIcon "{LISTING_DIRECTORY}/icons/iso.svg" .iso .img
-  AddIcon "{LISTING_DIRECTORY}/icons/java.svg" .jar .java
-  AddIcon "{LISTING_DIRECTORY}/icons/js.svg" .js .json
-  AddIcon "{LISTING_DIRECTORY}/icons/markdown.svg" .md
-  AddIcon "{LISTING_DIRECTORY}/icons/package.svg" .pkg .dmg .rpm .deb
-  AddIcon "{LISTING_DIRECTORY}/icons/pdf.svg" .pdf
-  AddIcon "{LISTING_DIRECTORY}/icons/php.svg" .php .phtml
-  AddIcon "{LISTING_DIRECTORY}/icons/py.svg" .py
-  AddIcon "{LISTING_DIRECTORY}/icons/rb.svg" .rb
-  AddIcon "{LISTING_DIRECTORY}/icons/script.svg" .bat .BAT .cmd .sh .ps .exe .EXE .msi .MSI
-  AddIcon "{LISTING_DIRECTORY}/icons/sql.svg" .sql
-  AddIcon "{LISTING_DIRECTORY}/icons/text.svg" .txt .cnf .conf .map .yaml
-  AddIcon "{LISTING_DIRECTORY}/icons/vector.svg" .svg .svgz
-  AddIcon "{LISTING_DIRECTORY}/icons/video.svg" .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv .webm
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/archive.svg" .zip .7z .bz2 .cab .gz .tar .rar
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/audio.svg" .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/bin.svg" .bin .hex
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/code.svg" .xml
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/doc.svg" .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/img.svg" .bmp .png .tiff .tif .gif .jpg .jpeg .jpe .psd .ai .ico .webp
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/spreadsheet.svg" .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/presentation.svg" .ppt .pptx .pot .potx .pptm .potm .xps
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/c++.svg" .cpp
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/c.svg" .c
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/css3.svg" .css .sass .scss .less
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/font.svg" .ttf .TTF .woff .WOFF .woff2 .WOFF2 .otf .OTF
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/h.svg" .h
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/html5.svg" .html .xhtml .shtml .htm .URL .url
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/info.svg" .nfo .info
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/iso.svg" .iso .img
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/java.svg" .jar .java
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/js.svg" .js .json
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/markdown.svg" .md
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/package.svg" .pkg .dmg .rpm .deb
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/pdf.svg" .pdf
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/php.svg" .php .phtml
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/py.svg" .py
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/rb.svg" .rb
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/script.svg" .bat .BAT .cmd .sh .ps .exe .EXE .msi .MSI
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/sql.svg" .sql
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/text.svg" .txt .cnf .conf .map .yaml
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/vector.svg" .svg .svgz
+  AddIcon "{C:\wamp64\www\AssamMe\directory-listing}/icons/video.svg" .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv .webm
 
   # Icons based on their type
-  AddIconByType (TXT,{LISTING_DIRECTORY}/icons/text.svg) text/*
-  AddIconByType (IMG,{LISTING_DIRECTORY}/icons/img.svg) image/*
-  AddIconByType (SND,{LISTING_DIRECTORY}/icons/audio.svg) audio/*
-  AddIconByType (VID,{LISTING_DIRECTORY}/icons/video.svg) video/*
+  AddIconByType (TXT,{C:\wamp64\www\AssamMe\directory-listing}/icons/text.svg) text/*
+  AddIconByType (IMG,{C:\wamp64\www\AssamMe\directory-listing}/icons/img.svg) image/*
+  AddIconByType (SND,{C:\wamp64\www\AssamMe\directory-listing}/icons/audio.svg) audio/*
+  AddIconByType (VID,{C:\wamp64\www\AssamMe\directory-listing}/icons/video.svg) video/*
 
 </IfModule>
