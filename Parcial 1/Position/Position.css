@@ -1,0 +1,12 @@
+.cajaFija{
+    z-index:4;
+}
+#caja2{
+    z-index:3;
+}
+.cajaAbsoluta{
+    z-index:2;
+}
+.cajaRelativa{
+    z-index:1;
+}

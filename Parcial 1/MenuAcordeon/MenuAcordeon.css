@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+}
+ul {list-style:none; width:200px; height:500px;}
+
+ul>li>ul{ display:none;}
+
+ul>li:hover>ul{
+    display:block;
+    height:100%;}
