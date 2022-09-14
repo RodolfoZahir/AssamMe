@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(lightgreen,rgb(72, 72, 255));
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.caja{
+    width: 100px;
+    height:100px;
+    background-color: blue;
+    margin:10px;
+    text-align: center;
+}
+#caja4{
+    align-self: flex-start;
+}
+#caja1{
+    flex-grow:1;;
+}
+#caja2{
+    flex-grow:2;
+}
+#caja3{
+    flex-grow:3;
+}
+#caja4{
+    flex-grow:4;
+}
+#caja5{
+    flex-grow:5;
+}
+#caja6{
+    flex-grow:6;
+}
+#caja7{
+    flex-grow:7;
+}

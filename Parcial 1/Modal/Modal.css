@@ -1,0 +1,48 @@
+*{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Rb0GyAOx5SVkMN5Zie9791sgWs2DM4R8fCjiNaediXb5zt3jYoZLDwPBlMIHWJ24W3A&usqp=CAU);
+}
+.opcion{
+    font-size:large;
+    font-family:Segoe UI;
+    color: saddlebrown;
+}
+ul {list-style:none; width:500px; height:500px;}
+
+ul>li>ul{ display:none;}
+
+ul>li:hover>ul{
+    display:block;
+    height:100%;}
+
+.ventanaModal{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: silver;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+}
+.ventanaModal:target{
+    opacity: 1;
+    pointer-events: auto;
+    background: none;
+}
+.ventanaModal > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+ul {list-style:none; width:500px; height:500px;}
+
+ul>li>ul{ display:none;}
+
+ul>li:hover>ul{
+    display:block;
+    height:100%;}
