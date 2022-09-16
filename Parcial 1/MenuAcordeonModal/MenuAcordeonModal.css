@@ -1,10 +1,13 @@
 *{
-    background-color: blueviolet;
+    background-color: black;
 }
 .opcion{
     font-size:large;
     font-family:Segoe UI;
     color: white;
+}
+.opcion{
+    width: 800px;
 }
 ul {list-style:none; width:500px; height:500px;}
 
@@ -21,7 +24,7 @@ ul>li:hover>ul{
     right: 0;
     bottom: 0;
     left: 0;
-    background: silver;
+    background:silver;
     z-index: 9999;
     opacity: 0;
     pointer-events: none;
@@ -37,7 +40,8 @@ ul>li:hover>ul{
     margin: 10% auto;
     padding: 5px;
     border-radius: 10px;
-    background: white;
+    background: dodgerblue;
+    color: aqua;
 }
 a{
     color: sandybrown;
