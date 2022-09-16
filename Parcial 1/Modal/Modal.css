@@ -1,10 +1,10 @@
 *{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Rb0GyAOx5SVkMN5Zie9791sgWs2DM4R8fCjiNaediXb5zt3jYoZLDwPBlMIHWJ24W3A&usqp=CAU);
+    background-color: blueviolet;
 }
 .opcion{
     font-size:large;
     font-family:Segoe UI;
-    color: saddlebrown;
+    color: white;
 }
 ul {list-style:none; width:500px; height:500px;}
 
@@ -38,6 +38,9 @@ ul>li:hover>ul{
     padding: 5px;
     border-radius: 10px;
     background: white;
+}
+a{
+    color: sandybrown;
 }
 ul {list-style:none; width:500px; height:500px;}
 

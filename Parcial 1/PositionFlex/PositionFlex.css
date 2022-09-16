@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    display:block;
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(lightgreen,rgb(72, 72, 255));
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.contenido{
+    position:absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    border-color:blueviolet;
+}
+.caja{
+    width: 100px;
+    height:100px;
+    background-color: blue;
+    margin:0px;
+    text-align: center;
+}
+#caja4{
+    align-self: flex-start;
+}
+@media (max-width:400px) {
+    .caja{
+        display:flex;
+        flex-direction:row;
+    }
+    
+}
