@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(rgb(0, 255, 242),rgb(72, 72, 255));
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-style:italic;
+    font-size:25px;
+}
+.caja{
+    width: 100px;
+    height:100px;
+    background-color: blue;
+    margin:0px;
+    text-align: center;
+    border:2px;
+}
+#caja1{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja2{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja3{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja4{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja5{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja6{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja7{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja8{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja9{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja10{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja11{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja12{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja13{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja14{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja15{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja16{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja17{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja18{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
+#caja19{
+    background-color: white;
+    color: black;
+    border-style:double;
+}
+#caja20{
+    background-color: black;
+    border-style:double;
+    border-color:white;
+}
