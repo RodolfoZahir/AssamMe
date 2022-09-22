@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(aqua,black);
+    display:grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: "enca menulat menulat"
+                         "enca col1 col2"
+                         "enca pie pie2";
+    justify-content: stretch;
+    align-content: stretch;
+
+    grid-auto-flow: stretch;
+    justify-items: stretch;
+}
+.caja{
+    text-align: left;
+    border: 1.5px solid red;
+}
+#enca{grid-area:enca;}
+#menulat {grid-area: menulat;}
+#col1 {grid-area:col1;}
+#col2 {grid-area:col2;}
+#pie{grid-area:pie}
+#pie2{grid-area:pie2}
+
+#menulat{
+    color: blue; font-size: 17px;
+}
+#col1{
+    color:blue; font-size:17px;
+}
+#pie{
+    color: blue; font-size:17px;
+}
+#pie2{
+    color: blue; font-size:17px;
+}
+p.texto{
+    font-style:normal; font-size:larger; color:white;
+}
+p.titulos{
+    text-align:center;
+    font-style:oblique;
+    font-size:0.5cm;
+    color: blue;
+}
