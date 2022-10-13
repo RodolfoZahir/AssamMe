@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RegistroEventos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div id="caja1" class="caja" onclick="alert('Click en Manzana')">Manzana</div>
+        <div id="caja2" class="caja">Sandia</div>
+        <div id="caja3" class="caja">Fresa</div>
+        <div id="caja4" class="caja">Brocoli</div>
+        <div id="caja5" class="caja">Elote</div>
+        <div id="caja6" class="caja">Tomate</div>
+    </div>
+</body>
+<script>
+document.getElementById("caja1").onclick=function(){alert("Hola,Usted es muy fan de la manzana")}
+document.getElementById("caja2").onclick=function(){alert("Hola,No sabia que le gustaba la sandia!")}
+document.getElementById("caja3").onclick=function(){alert("Hola,Los licuados de fresa son lo maximo!")}
+document.querySelector("#caja4").addEventListener("click",miFuncion1);
+document.querySelector("#caja5").addEventListener("click",miFuncion2);
+document.querySelector("#caja6").addEventListener("click",miFuncion3);
+function miFuncion1() {alert("Hola,El brocoli es un vegetal que a muy poca gente le gusta");}
+function miFuncion2() {alert("Hola,A mi tambien me encantan los elotes");}
+function miFuncion3() {alert("Hola,El tomate sirve para multiples salsas");}
+</script>
+</html>

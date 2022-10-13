@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(rgb(0, 255, 242),rgb(72, 72, 255));
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-style:italic;
+    font-size:25px;
+}
+.caja{
+    width: 100px;
+    height:100px;
+    background-color: blue;
+    margin:4px solid red;
+    text-align: center;
+    border:2px;
+}
+
+.cajaGreenYellow{
+    background-color: greenyellow;
+}
