@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    color:black;
+}
+input {
+    display: none;
+  }
+.contenedor{
+    width: 200 vw;
+    height: 200 vw;
+    font:icon;
+}
+.sidebar{
+    background-image:linear-gradient(pink,blue);
+    overflow:auto;
+    transition: 1s;
+    width: auto;
+    height: 100%;
+    float:right;
+}
+.caja{
+    background-color: black;
+    border-style: solid;
+    border-color:darkblue;
+    border-radius:7px;
+    color:darkorange;
+    font-size:20px;
+    float:right;
+    
+}
+a{
+    display:block;
+    padding:10px;
+}
+a:hover{
+    border-style:double;
+    background-color:rgb(56, 215, 255);
+    font-size:20px;
+}
+input:checked + .sidebar {
+    display: none;
+  }
