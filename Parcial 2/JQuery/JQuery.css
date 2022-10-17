@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 20px;
+    background-color: rgb(78, 78, 78);
+    font-style: bold;
+}
+
+.contenedor{
+background-image:linear-gradient(rgb(78, 78, 78),rgb(0, 255, 0));
+}
+#boton1{
+    width: 73px;
+    height: 70px; 
+    color:purple;
+    background-color: white;
+}
+#boton2{
+    width: 73px;
+    height: 70px;
+    color: orange;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#boton3{
+    width: 73px;
+    height: 70px; 
+    color:blue;
+    background-color: white;
+    border-radius: 10px;
+}
+#boton4{
+    width: 73px;
+    height: 70px; 
+    color:red;
+    background-color: white;
+    border-radius: 50px;
+}
