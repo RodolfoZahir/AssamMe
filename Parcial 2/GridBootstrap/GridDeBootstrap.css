@@ -1,0 +1,45 @@
+.container-fluid{
+    font-style: italic;
+}
+.head{
+    background-color:lightsalmon;
+}
+.col1{
+    background-color: chartreuse;
+}
+.col2{
+    background-color: pink;
+}
+.col3{
+    background-color: red;
+}
+.col4{
+    background-color: yellow;
+}
+.col5{
+    background-color: aqua;
+}
+.col6{
+    background-color: violet;
+}
+.col7{
+    background-color: blue;
+}
+.col8{
+    background-color: crimson;
+}
+.col9{
+    background-color: palegreen;
+}
+.col10{
+    background-color: khaki;
+}
+.col11{
+    background-color: rebeccapurple;
+}
+.col12{
+    background-color: fuchsia;
+}
+.col13{
+    background-color: yellowgreen;
+}
