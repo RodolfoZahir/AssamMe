@@ -14,12 +14,15 @@
     <pre id="apiData"></pre>
     <button id="btnLlamar">Aparecer imagen</button>
     <script src="AsyncAwait.js"></script>
+    <img src=''/>
     <button id="btnLlamarAsyncAwait">Aparecer imagen AsyncAwait</button>
 
     <script>
         document.getElementById("btnLlamarAsyncAwait").addEventListener("click",async function(){
             let respuesta = await fetch("https://dog.ceo/api/breeds/image/random")
             let datoJson = await respuesta.json();
+            console.log(data.message);
+            image.src =data.message;
             document.getElementById("contenedor").innerHTML=datoJs.Value
         })
     </script>

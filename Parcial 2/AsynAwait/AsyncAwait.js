@@ -12,4 +12,3 @@ const llamarfto = () => {
 }
 
 btnllamar.addEventListener('click', llamarfto);
-
