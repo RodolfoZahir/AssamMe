@@ -1,7 +1,7 @@
-export function letras(palabra) {
+export function remplazo(palabra) {
     return palabra.replace('a','o');
 }
-export function lenghtpalabra(palabra) {
+export function lenpalabra(palabra) {
     return palabra.lenght; 
 }
 

@@ -15,10 +15,10 @@
     <input id="mag" type="text">
 </body>
 <script type="module">
-    import{mayuscula,longitud} from "./ModuloEcma.js"
+    import{remplazo,lenpalabra} from "./ModuloEcma.js"
         document.getElementById("btnmagia").addEventListener("click",function () {
             let varpalabra=document.getElementById("palabra").value;
-            let varpal=mayuscula(varpalabra);
+            let varpal=remplazo(varpalabra);
             document.getElementById("mag").value = varpal;
         });
 </script>
