@@ -1,7 +1,7 @@
-export function mayuscula(palabra) {
+export function letras(palabra) {
     return palabra.replace('a','o');
 }
-export function longitud(palabra) {
+export function lenghtpalabra(palabra) {
     return palabra.lenght; 
 }
 
