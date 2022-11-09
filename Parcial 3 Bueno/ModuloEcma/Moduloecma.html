@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ModuloEcma.css">
+</head>
+<body>
+    <h2>Esta Página Es Mágica ¡Convierte todas las letras 'a' en 'o'!</h2>
+    <label for="palabra">Escriba una palabra:</label>
+    <input id="palabra" type="text">
+    <button id="btnmagia">¡MÁGIA!</button>
+    <input id="mag" type="text">
+</body>
+<script type="module">
+    import{remplazo,lenpalabra} from "./ModuloEcma.js"
+        document.getElementById("btnmagia").addEventListener("click",function () {
+            let varpalabra=document.getElementById("palabra").value;
+            let varpal=remplazo(varpalabra);
+            document.getElementById("mag").value = varpal;
+        });
+</script>
+</html>
