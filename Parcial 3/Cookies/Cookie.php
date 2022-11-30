@@ -7,7 +7,7 @@ if(isset($_COOKIE['ultimaVisita'])) {
         }
         else{
             printf("No se encontró cookie de última visita . <br>");
-        }
+        
 
         $fechahoy   =date('Y/m/d H:i:s');
         $siguienteSemana= time()+(7*24*60*60);
@@ -17,5 +17,6 @@ if(isset($_COOKIE['ultimaVisita'])) {
         echo '<b>Fecha de Vencimiento de Cookie: </b>',$fechaExpira."<br>";
 
         setcookie("ultimaVisita",$fechahoy,time()+(7*24*60*60));
+    }
     
 ?>
