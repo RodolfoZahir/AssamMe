@@ -10,11 +10,11 @@
 </head>
 <body>
     <h1>Tienda Electronica Lens</h1>
-    <form>
+    <form id="form1">
         <div class="row"> 
           <div class="form-group col-sm-10 col-md-6 col-lg-1">
-            <label for="idProducto class="form-label">ID Producto:</label>
-            <input type="number" class="form-control" id="idProducto" >
+            <label for="idinformacion" class="form-label">ID Producto:</label>
+            <input type="number" class="form-control" name="idinformacion" id="idinformacion" >
           </div>
           <div class="row">
           <div class="form-group col-sm-10 col-md-6 col-lg-3">
@@ -53,16 +53,20 @@
     </div>
     <div class="row"> 
       </div>
-      <button type="submit" id ="btnConsulta" class="btn btn-primary">Consultar</button>
+      <button type="button" id ="btnConsulta" class="btn btn-primary">Consultar</button>
       <div>
   </div>
-
     <script src="./bootstrap.bundle.min.js"></script>
     <script>
        document.getElementById("btnConsulta").addEventListener("click",async function(){
-        let respuesta = await fetch("FormularioGet.php");
+        data = new FormData(form1);
+        console.log(data);
+        let respuesta = await fetch("Formulario.php",{
+        method: 'POST',
+        body: data}
+        );
         let Dato = await respuesta.json();
-        document.getElementById("idProducto").value=Dato.idProducto;
+        document.getElementById("idinformacion").value=Dato.idProducto;
         document.getElementById("idMarcaProd").value=Dato.idMarcaProd;
         document.getElementById("idNombreProd").value=Dato.idNombreProd;
         document.getElementById("idColor").value=Dato.idColor;

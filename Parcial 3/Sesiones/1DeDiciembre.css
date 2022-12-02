@@ -1,0 +1,10 @@
+*{
+    margin:auto;
+    padding:auto;
+    background-color: rgb(142, 142, 218);
+}
+form{
+    color:rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 25px;
+}
