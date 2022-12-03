@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./diseño.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
 </head>
 <body>
     <h1>Tienda Electronica Lens</h1>
     <form id="form1">
         <div class="row"> 
-          <div class="form-group col-sm-10 col-md-6 col-lg-1">
+          <div class="form-group col-sm-10 col-md-6 col-lg-3">
             <label for="idinformacion" class="form-label">ID Producto:</label>
             <input type="number" class="form-control" name="idinformacion" id="idinformacion" >
           </div>
@@ -32,18 +32,21 @@
       </div>
     </div>
     <div class="row"> 
-  <div class="form-group col-sm-6 col-md-4 col-lg-10">
+  <div class="form-group col-sm-6 col-md-4 col-lg-3">
     <label for="idAlmacenamiento" class="form-label">Almacenamiento:</label>
     <input type="number" class="form-control" id="idAlmacenamiento">
   </div>
-
-  <div class="form-group col-sm-6 col-md-4 col-lg-10">
-    <label for="idTamaño" class="form-label">Tamaño (pulgadas):</label>
-    <input type="number" class="form-control" id="idTamaño">
-  </div>
-  <div class="form-group col-sm-6 col-md-4 col-lg-10">
+  <div class="form-group col-sm-6 col-md-4 col-lg-3">
     <label for="idTipoPantalla" class="form-label">Tipo de pantalla:</label>
     <input type="text" class="form-control" id="idTipoPantalla" >
+  </div>
+  <div class="form-group col-sm-6 col-md-4 col-lg-3">
+    <label for="idSistemaOperativo" class="form-label">Sistema Operativo:</label>
+    <input type="text" class="form-control" id="idSistemaOperativo">
+  </div>
+  <div class="form-group col-sm-6 col-md-4 col-lg-3">
+    <label for="idInventario" class="form-label">Inventario:</label>
+    <input type="number" class="form-control" id="idInventario">
   </div>
 </div>
    
@@ -58,23 +61,23 @@
   </div>
     <script src="./bootstrap.bundle.min.js"></script>
     <script>
-       document.getElementById("btnConsulta").addEventListener("click",async function(){
-        data = new FormData(form1);
-        console.log(data);
-        let respuesta = await fetch("Formulario.php",{
-        method: 'POST',
-        body: data}
-        );
-        let Dato = await respuesta.json();
-        document.getElementById("idinformacion").value=Dato.idProducto;
-        document.getElementById("idMarcaProd").value=Dato.idMarcaProd;
-        document.getElementById("idNombreProd").value=Dato.idNombreProd;
-        document.getElementById("idColor").value=Dato.idColor;
-        document.getElementById("idAlmacenamiento").value=Dato.idAlmacenamiento;
-        document.getElementById("idTamaño").value=Dato.idTamaño;
-        document.getElementById("idTipoPantalla").value=Dato.idTipoPantalla;
-        Console.log(respuesta);
-      });
+       document.getElementById("btnConsulta").addEventListener("click", async function(){
+    var DatosF = new FormData(document.getElementById("form1"));
+   let respuesta = await fetch("Formulario.php", {
+     method: 'POST', 
+      body: DatosF
+   })
+          let datojson = await respuesta.json();
+           document.getElementById("idinformacion").value = datojson.idinformacion;
+            document.getElementById("idMarcaProd").value = datojson.MarcaProd;
+             document.getElementById("idNombreProd").value = datojson.NombreProd;
+             document.getElementById("idColor").value = datojson.Color;
+             document.getElementById("idAlmacenamiento").value = datojson.Almacenamiento;
+             document.getElementById("idTipoPantalla").value = datojson.TipoPantalla;
+             document.getElementById("idSistemaOperativo").value = datojson.SistemaOperativo;
+             document.getElementById("idInventario").value = datojson.Inventario;
+             console.log(datojson);
+     });
     </script>
 </body>
 </html>
