@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
-    <label for="nombre"></label>
-    <input id= "nombre" type="text">
-    <input id="btn" type="button" value="crear PDF">
-
+    <form id="forma">
+        <h2>Bienvenido al Espacio</h2>
+        <h2>Por favor, Proporcione su nombre</h2>
+        <label for="nombre">Escriba su nombre:</label>
+        <input id= "nombre" name="nombre" type="text">
+        <input id="btn" type="button" value="crear PDF">
+    </form>
     <script>
-        document.getElementById("btn").addEventListener("click",function(){
-            alert("click en el botón");
-        })
+        document.getElementById('nombre').focus();
+        document.getElementById("btn").addEventListener("click", async function(){
+        let miForm=document.getElementById('forma');
+        let bodyContent = new FormData(miForm);
+        let response = await fetch("http://localhost/AssamMe/Parcial%203/pdf/crearpdf.php", { 
+        method: "POST",
+        body:bodyContent
+        });
+        let archivoPdf = await response.blob();
+        let archivoUrl = URL.createObjectURL(archivoPdf);
+        window.open(archivoUrl);
+        });
     </script>
 </body>
 </html>
