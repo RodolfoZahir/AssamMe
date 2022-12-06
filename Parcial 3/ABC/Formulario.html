@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <script type= 'text/javascript' scr ="ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body>
     <h1>Tienda Electronica Lens</h1>
@@ -52,7 +53,7 @@
    
 <div class="row"> 
   <div class="form-group col-sm-6 col-md-4 col-lg-3">
-    <button type="button" id = "btnAñadir" class="btn btn-primary">Añadir</button>
+    <button type="button" id = "btnAnadir" class="btn btn-primary">Añadir</button>
   </div>
   <div class="form-group col-sm-6 col-md-4 col-lg-3">
     <button type="button" id ="btnConsulta" class="btn btn-primary">Consultar</button>
@@ -86,18 +87,23 @@
     </script>
     <script>
       //Agregar
-      $('#btnAñadir').click(function(){
-        let inf = $('#idinformacion').val();
-        let mar = $('#idMarcaProd').val();
-        let nom = $('#idNombreProd').val();
-        let col = $('#idColor').val();
-        let alm = $('#idAlmacenamiento').val();
-        let tip = $('#idTipoPantalla').val();
-        let sis = $('#idSistemaOperativo').val();
-        let inv = $('#idInventario').val();
-
-        $.post('./añadir.php',{idinformacion:inf,idMarcaProd:mar,idNombreProd:nom,idColor:col,idAlmacenamiento:alm,idTipoPantalla:tip,idSistemaOperativo:sis, idInventario:inv})
+      document.getElementById("btnAnadir").addEventListener("click", async function(){
+       var DatosF = new FormData(document.getElementById("form1"));
+       let respuesta = await fetch("añadir.php", {
+       method: 'POST', 
+       body: DatosF
       })
+       let datojson = await respuesta.json();
+       document.getElementById("idinformacion").value = datojson.idinformacion;
+       document.getElementById("idMarcaProd").value = datojson.MarcaProd;
+       document.getElementById("idNombreProd").value = datojson.NombreProd;
+       document.getElementById("idColor").value = datojson.Color;
+       document.getElementById("idAlmacenamiento").value = datojson.Almacenamiento;
+       document.getElementById("idTipoPantalla").value = datojson.TipoPantalla;
+       document.getElementById("idSistemaOperativo").value = datojson.SistemaOperativo;
+       document.getElementById("idInventario").value = datojson.Inventario;
+       console.log(datojson);
+     });
     </script>
     <script>
       //Eliminar
