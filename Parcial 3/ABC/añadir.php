@@ -1,36 +1,27 @@
 <?php
-$id6=$_POST['idInformacion'];
-$NOMBRE=$_POST['idNombre'];
-$GENERO=$_POST['idGenero'];
-$SUBGEN=$_POST['idsubGenero'];
-$AUTOR=$_POST['idAutor'];
-$IDIOMA=$_POST['idIdioma'];
-$EDITORIAL=$_POST['idEditorial'];
-$AÑO=$_POST['idAño'];
+$idd=$_POST['idinformacion'];
+$marc=$_POST['MarcaProd'];
+$nomb=$_POST['NombreProd'];
+$colo=$_POST['Color'];
+$alma=$_POST['Almacenamiento'];
+$tipo=$_POST['TipoPantalla'];
+$sist=$_POST['SistemaOperativo'];
+$inve=$_POST['Inventario'];
 
 $servidor='localhost';
-$basedatos='baselibro';
+$basedatos='informacion';
 $usuario='root';
-$password='';
+$password='rodozahir123';
 
-$idLibro=$_POST['par1'];
-try {
-    $con = new PDO($servidor,$usuario,$password,$basedatos);
-} catch(PDOException $e) {
-    echo "Error de conexion a la base de datos";
-    echo $e->getMessage();
-    exit();
+$con = mysqli_connect($servidor,$usuario,$password,$basedatos) or die("No se pudo conectar");
+$consulta = "INSERT INTO tienda(idinformacion, MarcaProd, NombreProd, Color, Almacenamiento, TipoPantalla, SistemaOperativo, Inventario) 
+VALUES('$idd','$marc','$nomb','$colo','$alma','$tipo','$sist','$inve')";
+$registros = mysqli_query($con,$consulta) or die("problemas en el select");
+
+if($registros){
+    header("Location:Formulario.html");
 }
-try {
-$consultaSql = " Insert into libro (idLibro, Nombre, Genero, SubGenero, Autor, Idioma, Editorial, Año) VALUES ('$id',
-'$NOMBRE','$GENERO','$SUBGEN','$AUTOR','$IDIOMA','$EDITORIAL','$AÑO')";
-$consulta = $con -> prepare($consultaSql);
-$consulta -> execute();
-$consulta->closeCursor();
-echo "SE HAN INTRODUCIDO LOS DATOS DEL NUEVO REGISTRO CORRECTAMENTE";
-
-} catch(PDOException $e) {
-    echo "Error de consulta a la base de datos";
-    echo $e->getMessage();
+else{
+    echo "arregla esto";
 }
 ?>
